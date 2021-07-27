@@ -4,7 +4,31 @@
 
 To build a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.
 
+## URL Address:
+
+https://rosswyman.github.io/meet
+
 ## Dependencies:
+
+@testing-library/jest-dom  
+@testing-library/react
+@testing-library/user-event  
+react  
+react-dom  
+react-scripts  
+web-vitals  
+workbox-background-sync  
+workbox-broadcast-update  
+workbox-cacheable-response  
+workbox-core  
+workbox-expiration  
+workbox-google-analytics  
+workbox-navigation-preload  
+workbox-precaching  
+workbox-range-requests  
+workbox-routing  
+workbox-strategies  
+workbox-streams
 
 ## User Stories
 
