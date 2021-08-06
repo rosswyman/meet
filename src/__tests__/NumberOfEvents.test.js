@@ -5,20 +5,22 @@ import { shallow } from 'enzyme';
 import NumberOfEvents from '../NumberOfEvents';
 
 describe('<NumberOfEvents /> component', () => {
+	let NumberOfEventsWrapper;
+	beforeAll(() => {
+		NumberOfEventsWrapper = shallow(<NumberOfEvents />);
+	});
+
 	test('render number of events text input', () => {
-		const NumberOfEventsWrapper = shallow(<NumberOfEvents />);
 		expect(NumberOfEventsWrapper.find('.numberOfEventsInput')).toHaveLength(1);
 	});
 
 	test('renders default number of events equal to 32', () => {
-		const NumberOfEventsWrapper = shallow(<NumberOfEvents />);
 		expect(
 			NumberOfEventsWrapper.find('.numberOfEventsInput').prop('value')
 		).toBe(32);
 	});
 
 	test('change state when text input changes', () => {
-		const NumberOfEventsWrapper = shallow(<NumberOfEvents />);
 		const numberOfEventsObject = { target: { value: 10 } };
 		NumberOfEventsWrapper.find('.numberOfEventsInput').simulate(
 			'change',
