@@ -44,7 +44,6 @@ class App extends Component {
 	}
 
 	render() {
-		// console.log(this.state.numberOfEvents);
 		return (
 			<div className="App">
 				<CitySearch
