@@ -17,13 +17,14 @@ class Event extends Component {
 
 	showDescription(event) {
 		if (this.state.showDetails === true) {
-			return event.details;
+			return event.description;
 		} else {
 			return '';
 		}
 	}
 
 	render() {
+		console.log(this.state.showDetails);
 		const { event } = this.props;
 		return (
 			<div className="event">
@@ -32,7 +33,7 @@ class Event extends Component {
 					{event.start.dateTime}+' '+{event.start.timeZone}
 				</p>
 				<p className="eventLocation">{event.location}</p>
-				<p className="eventDesciption">{this.showDescription}</p>
+				<p className="eventDesciption">{this.showDescription(event)}</p>
 				<button
 					className="expandDetailsButton"
 					onClick={() => {
