@@ -89,7 +89,7 @@ describe('<App /> integration', () => {
 		const allEvents = await getEvents();
 		const eventsToShow = allEvents.slice(0, numberOfEvents);
 
-		expect(eventsToShow.length).toBe(19);
+		expect(eventsToShow.length).toBe(32);
 		AppWrapper.unmount();
 	});
 });
