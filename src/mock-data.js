@@ -1838,79 +1838,79 @@ var mockData = [
 		},
 		eventType: 'default',
 	},
-	{
-		kind: 'calendar#event',
-		etag: '"3187224991890000"',
-		id: '3glt4dve9uip7oh5g5kb2bid2s_20200702T160000Z',
-		status: 'confirmed',
-		htmlLink:
-			'https://www.google.com/calendar/event?eid=M2dsdDRkdmU5dWlwN29oNWc1a2IyYmlkMnNfMjAyMDA3MDJUMTYwMDAwWiBmdWxsc3RhY2t3ZWJkZXZAY2FyZWVyZm91bmRyeS5jb20',
-		created: '2020-07-01T14:07:59.000Z',
-		updated: '2020-07-01T14:08:15.945Z',
-		summary: 'Fun with Node.js',
-		description:
-			'Do you know that Node.js is basically a server having the capability of executing JavaScript? If you are familiar with JS, Node.js will be an easy ride. \n\nJoin us if you want to learn how to build the server-side of an app using Node.js.',
-		location: 'Nairobi, Kenya',
-		creator: {
-			email: 'fullstackwebdev@careerfoundry.com',
-			self: true,
-		},
-		organizer: {
-			email: 'fullstackwebdev@careerfoundry.com',
-			self: true,
-		},
-		start: {
-			dateTime: '2020-07-02T18:00:00+02:00',
-			timeZone: 'Europe/Berlin',
-		},
-		end: {
-			dateTime: '2020-07-02T19:00:00+02:00',
-			timeZone: 'Europe/Berlin',
-		},
-		recurringEventId: '3glt4dve9uip7oh5g5kb2bid2s',
-		originalStartTime: {
-			dateTime: '2020-07-02T18:00:00+02:00',
-			timeZone: 'Europe/Berlin',
-		},
-		iCalUID: '3glt4dve9uip7oh5g5kb2bid2s@google.com',
-		sequence: 1,
-		hangoutLink: 'https://meet.google.com/wkx-akyy-omd',
-		conferenceData: {
-			entryPoints: [
-				{
-					entryPointType: 'video',
-					uri: 'https://meet.google.com/wkx-akyy-omd',
-					label: 'meet.google.com/wkx-akyy-omd',
-				},
-				{
-					entryPointType: 'more',
-					uri: 'https://tel.meet/wkx-akyy-omd?pin=9536747460380',
-					pin: '9536747460380',
-				},
-				{
-					regionCode: 'DE',
-					entryPointType: 'phone',
-					uri: 'tel:+49-40-8081616512',
-					label: '+49 40 8081616512',
-					pin: '576339034',
-				},
-			],
-			conferenceSolution: {
-				key: {
-					type: 'hangoutsMeet',
-				},
-				name: 'Google Meet',
-				iconUri:
-					'https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v6/web-512dp/logo_meet_2020q4_color_2x_web_512dp.png',
-			},
-			conferenceId: 'wkx-akyy-omd',
-			signature: 'ADXwMqOAKn7ZT8sCEEBbgJD9ObYS',
-		},
-		reminders: {
-			useDefault: true,
-		},
-		eventType: 'default',
-	},
+	// {
+	// 	kind: 'calendar#event',
+	// 	etag: '"3187224991890000"',
+	// 	id: '3glt4dve9uip7oh5g5kb2bid2s_20200702T160000Z',
+	// 	status: 'confirmed',
+	// 	htmlLink:
+	// 		'https://www.google.com/calendar/event?eid=M2dsdDRkdmU5dWlwN29oNWc1a2IyYmlkMnNfMjAyMDA3MDJUMTYwMDAwWiBmdWxsc3RhY2t3ZWJkZXZAY2FyZWVyZm91bmRyeS5jb20',
+	// 	created: '2020-07-01T14:07:59.000Z',
+	// 	updated: '2020-07-01T14:08:15.945Z',
+	// 	summary: 'Fun with Node.js',
+	// 	description:
+	// 		'Do you know that Node.js is basically a server having the capability of executing JavaScript? If you are familiar with JS, Node.js will be an easy ride. \n\nJoin us if you want to learn how to build the server-side of an app using Node.js.',
+	// 	location: 'Nairobi, Kenya',
+	// 	creator: {
+	// 		email: 'fullstackwebdev@careerfoundry.com',
+	// 		self: true,
+	// 	},
+	// 	organizer: {
+	// 		email: 'fullstackwebdev@careerfoundry.com',
+	// 		self: true,
+	// 	},
+	// 	start: {
+	// 		dateTime: '2020-07-02T18:00:00+02:00',
+	// 		timeZone: 'Europe/Berlin',
+	// 	},
+	// 	end: {
+	// 		dateTime: '2020-07-02T19:00:00+02:00',
+	// 		timeZone: 'Europe/Berlin',
+	// 	},
+	// 	recurringEventId: '3glt4dve9uip7oh5g5kb2bid2s',
+	// 	originalStartTime: {
+	// 		dateTime: '2020-07-02T18:00:00+02:00',
+	// 		timeZone: 'Europe/Berlin',
+	// 	},
+	// 	iCalUID: '3glt4dve9uip7oh5g5kb2bid2s@google.com',
+	// 	sequence: 1,
+	// 	hangoutLink: 'https://meet.google.com/wkx-akyy-omd',
+	// 	conferenceData: {
+	// 		entryPoints: [
+	// 			{
+	// 				entryPointType: 'video',
+	// 				uri: 'https://meet.google.com/wkx-akyy-omd',
+	// 				label: 'meet.google.com/wkx-akyy-omd',
+	// 			},
+	// 			{
+	// 				entryPointType: 'more',
+	// 				uri: 'https://tel.meet/wkx-akyy-omd?pin=9536747460380',
+	// 				pin: '9536747460380',
+	// 			},
+	// 			{
+	// 				regionCode: 'DE',
+	// 				entryPointType: 'phone',
+	// 				uri: 'tel:+49-40-8081616512',
+	// 				label: '+49 40 8081616512',
+	// 				pin: '576339034',
+	// 			},
+	// 		],
+	// 		conferenceSolution: {
+	// 			key: {
+	// 				type: 'hangoutsMeet',
+	// 			},
+	// 			name: 'Google Meet',
+	// 			iconUri:
+	// 				'https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v6/web-512dp/logo_meet_2020q4_color_2x_web_512dp.png',
+	// 		},
+	// 		conferenceId: 'wkx-akyy-omd',
+	// 		signature: 'ADXwMqOAKn7ZT8sCEEBbgJD9ObYS',
+	// 	},
+	// 	reminders: {
+	// 		useDefault: true,
+	// 	},
+	// 	eventType: 'default',
+	// },
 ];
 
 mockData = JSON.parse(JSON.stringify(mockData));
