@@ -49,7 +49,7 @@ defineFeature(feature, (test) => {
 		then(
 			'the user should receive a list of cities (suggestions) that match what they’ve typed',
 			() => {
-				console.log(CitySearchWrapper.find('.suggestions li').length);
+				// console.log(CitySearchWrapper.find('.suggestions li').length);
 				expect(CitySearchWrapper.find('.suggestions li')).toHaveLength(2);
 			}
 		);
