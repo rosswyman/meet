@@ -34,7 +34,7 @@ class ErrorAlert extends Alert {
 	constructor(props) {
 		super(props);
 		this.color = 'red';
-		this.size = 'x-large';
+		this.size = 'large';
 		this.style = 'italic';
 	}
 }
