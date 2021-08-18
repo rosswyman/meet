@@ -199,6 +199,14 @@ input[type='number'] {
 	font-family: 'Roboto';
 }
 
+.CitySearch {
+	margin-bottom: 20px;
+}
+
+.suggestions {
+	margin-top: 50px;
+}
+
 @media only screen and (min-width: 992px) {
 	.data-vis-wrapper {
 		flex-direction: row;
