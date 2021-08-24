@@ -83,12 +83,18 @@ class App extends Component {
 		window.addEventListener('online', this.checkOnlineStatus);
 	}
 
+	componentDidUpdate(prevEvents) {
+		if (this.state.events !== prevEvents) {
+			this.updateEvents();
+		}
+	}
+
 	componentWillUnmount() {
 		this.mounted = false;
 	}
 
 	render() {
-		const { locations, numberOfEvents, events } = this.state;
+		const { events } = this.state;
 		if (this.state.showWelcomeScreen === undefined)
 			return <div className="App" />;
 		return (
