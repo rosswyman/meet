@@ -40,7 +40,6 @@ class App extends Component {
 
 	updateNumberOfEvents = (eventCount) => {
 		this.setState({ numberOfEvents: eventCount });
-		this.updateEvents();
 	};
 
 	checkOnlineStatus = () => {
