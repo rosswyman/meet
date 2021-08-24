@@ -97,7 +97,7 @@ class App extends Component {
 					updateEvents={this.updateEvents}
 				/>
 				<NumberOfEvents updateNumberOfEvents={this.updateNumberOfEvents} />
-				{/* <ScatterChart
+				<ScatterChart
 					width={730}
 					height={250}
 					margin={{ top: 20, right: 20, bottom: 10, left: 10 }}
@@ -107,7 +107,7 @@ class App extends Component {
 					<YAxis type="number" dataKey="number" name="number of events" />
 					<Tooltip cursor={{ strokeDasharray: '3 3' }} />
 					<Scatter data={this.getData()} fill="#8884d8" />
-				</ScatterChart> */}
+				</ScatterChart>
 				<EventList
 					events={this.state.events}
 					numberOfEvents={this.state.numberOfEvents}
