@@ -30,8 +30,8 @@ class App extends Component {
 	};
 
 	updateEvents = (location, eventCount) => {
-		console.log(location);
-		console.log(eventCount);
+		// console.log(location);
+		// console.log(eventCount);
 		getEvents().then((events) => {
 			const locationEvents =
 				location === 'all'
@@ -81,8 +81,12 @@ class App extends Component {
 		this.setState({ showWelcomeScreen: !(code || isTokenValid) });
 		if ((code || isTokenValid) && this.mounted) {
 			getEvents().then((events) => {
+				const startEvents = events.slice(0, this.state.numberOfEvents);
 				if (this.mounted) {
-					this.setState({ events, locations: extractLocations(events) });
+					this.setState({
+						events: startEvents,
+						locations: extractLocations(events),
+					});
 				}
 			});
 		}
