@@ -31,6 +31,7 @@ class CitySearch extends Component {
 	};
 
 	handleItemClicked = (suggestion) => {
+		const numberOfEvents = this.props.numberOfEvents;
 		this.setState({
 			query: suggestion,
 			suggestions: [],
@@ -38,7 +39,7 @@ class CitySearch extends Component {
 			infoText: '',
 		});
 
-		this.props.updateEvents(suggestion, 2);
+		this.props.updateEvents(suggestion, numberOfEvents);
 	};
 
 	render() {

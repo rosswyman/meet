@@ -26,7 +26,7 @@ class App extends Component {
 		locations: [],
 		numberOfEvents: 32,
 		showWelcomeScreen: undefined,
-		selectedCity: undefined,
+		selectedCity: 'all',
 	};
 
 	updateEvents = (location, eventCount) => {
@@ -104,6 +104,7 @@ class App extends Component {
 				<CitySearch
 					locations={this.state.locations}
 					updateEvents={this.updateEvents}
+					numberOfEvents={this.state.numberOfEvents}
 				/>
 				<NumberOfEvents updateNumberOfEvents={this.updateNumberOfEvents} />
 				<div className="data-vis-wrapper">
