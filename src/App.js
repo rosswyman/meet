@@ -26,21 +26,28 @@ class App extends Component {
 		locations: [],
 		numberOfEvents: 32,
 		showWelcomeScreen: undefined,
+		selectedCity: undefined,
 	};
 
-	updateEvents = (location) => {
+	updateEvents = (location, eventCount) => {
+		console.log(location);
+		console.log(eventCount);
 		getEvents().then((events) => {
 			const locationEvents =
 				location === 'all'
 					? events
 					: events.filter((event) => event.location === location);
-			const numberOfEvents = this.state.numberOfEvents;
-			this.setState({ events: locationEvents.slice(0, numberOfEvents) });
+			this.setState({
+				events: locationEvents.slice(0, eventCount),
+				numberOfEvents: eventCount,
+				selectedCity: location,
+			});
 		});
 	};
 
 	updateNumberOfEvents = (eventCount) => {
-		this.setState({ numberOfEvents: eventCount });
+		// const { query } = this.state;
+		this.updateEvents(this.state.selectedCity, eventCount);
 	};
 
 	checkOnlineStatus = () => {
